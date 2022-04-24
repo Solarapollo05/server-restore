@@ -1,0 +1,4 @@
+LABEL=writable	/	 ext4	discard,errors=remount-ro	0 1
+LABEL=system-boot       /boot/firmware  vfat    defaults        0       1
+UUID="465E-EDD9" /server auto auto,nofail,user,rw,uid=1000,exec 	0	2
+UUID="15E8D65D0A197F10" /file-history auto auto,nofail,user,rw,uid=1000,exec	0	2
