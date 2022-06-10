@@ -10,6 +10,11 @@ echo "Downloading config files from Solarapollo05/server-restore"
 sudo apt-get install --quiet git -y
 git clone "https://www.github.com/Solarapollo05/server-restore"
 
+echo "Creating mountpoints..."
+sudo mkdir /server
+sudo mkdir /file-history
+
+
 echo "Overwriting default config files..."
 sudo mv --force ~/server-restore/configs/smb.conf /etc/samba/smb.conf # Overwrite config files
 sudo mv --force ~/server-restore/configs/fstab /etc/fstab
